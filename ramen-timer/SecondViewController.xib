@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController" customModule="ramen_timer" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="VmS-p8-dkh" id="ZXw-Oh-vmL"/>
+                <outlet property="startButton" destination="FE6-Vw-Esb" id="v9A-6S-r4Q"/>
+                <outlet property="stopButton" destination="6gt-U3-jJh" id="xQy-vi-JFg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="時間をタップ！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VmS-p8-dkh">
+                    <rect key="frame" x="51" y="52" width="273" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="nA3-4h-zDT"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="71" translatesAutoresizingMaskIntoConstraints="NO" id="e4E-fn-c88">
+                    <rect key="frame" x="49" y="575" width="277" height="42"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvx-VF-6ha">
+                            <rect key="frame" x="0.0" y="0.0" width="53" height="42"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <state key="normal" title="10秒"/>
+                            <connections>
+                                <action selector="tenSecButtonTapped:" destination="-1" eventType="touchUpInside" id="Ah8-ng-kYk"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yq-4r-fZi">
+                            <rect key="frame" x="124" y="0.0" width="41" height="42"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <state key="normal" title="3分"/>
+                            <connections>
+                                <action selector="threeMinButtonTapped:" destination="-1" eventType="touchUpInside" id="mu8-Ai-aCh"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NjQ-jZ-nyh">
+                            <rect key="frame" x="236" y="0.0" width="41" height="42"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <state key="normal" title="5分"/>
+                            <connections>
+                                <action selector="fiveMinButtonTapped:" destination="-1" eventType="touchUpInside" id="ozF-N9-TJb"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ラーメン2" translatesAutoresizingMaskIntoConstraints="NO" id="FD7-by-DgV">
+                    <rect key="frame" x="0.0" y="149" width="375" height="383"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gt-U3-jJh">
+                    <rect key="frame" x="88" y="127" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FE6-Vw-Esb">
+                    <rect key="frame" x="228" y="127" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.665230039" blue="0.12655246449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VmS-p8-dkh" firstAttribute="centerX" secondItem="FD7-by-DgV" secondAttribute="centerX" id="4Ar-Yr-Xfq"/>
+                <constraint firstItem="e4E-fn-c88" firstAttribute="top" secondItem="FD7-by-DgV" secondAttribute="bottom" constant="43" id="KNp-55-xxB"/>
+                <constraint firstItem="FD7-by-DgV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="VG0-G0-Smg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FD7-by-DgV" secondAttribute="trailing" id="czi-2E-Rnd"/>
+                <constraint firstItem="e4E-fn-c88" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="49" id="fof-Ud-T8y"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="e4E-fn-c88" secondAttribute="trailing" constant="49" id="gZf-Zp-3Oe"/>
+                <constraint firstItem="FD7-by-DgV" firstAttribute="top" secondItem="VmS-p8-dkh" secondAttribute="bottom" constant="43" id="n0V-lg-jWx"/>
+                <constraint firstItem="VmS-p8-dkh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="oT7-HF-k0m"/>
+                <constraint firstItem="VmS-p8-dkh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="51" id="qUe-Me-faO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="e4E-fn-c88" secondAttribute="bottom" constant="50" id="sC3-Dz-Y1B"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="55.200000000000003" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ラーメン2" width="750" height="1334"/>
+    </resources>
+</document>

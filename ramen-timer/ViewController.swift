@@ -15,6 +15,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func touchedButton(_ sender: UIButton) {
+        let vc = SecondViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
 
