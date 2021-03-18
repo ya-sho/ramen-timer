@@ -20,10 +20,7 @@ class SecondViewController: UIViewController {
     
     
     
-    @IBOutlet weak var stopButton: UIButton! //停止ボタン
-    
-    
-    @IBOutlet weak var startButton: UIButton!//再開ボタン
+
     
     
     
