@@ -55,8 +55,8 @@
                         </button>
                     </subviews>
                 </stackView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="時間をタップ！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VmS-p8-dkh">
-                    <rect key="frame" x="94" y="68" width="226.5" height="94"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="時間を選択" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VmS-p8-dkh">
+                    <rect key="frame" x="110" y="68" width="161.5" height="94"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="94" id="YZb-fp-5uw"/>
                     </constraints>
@@ -70,7 +70,7 @@
             </subviews>
             <color key="backgroundColor" red="1" green="0.665230039" blue="0.12655246449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="VmS-p8-dkh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="94" id="1fS-Jn-Zpl"/>
+                <constraint firstItem="VmS-p8-dkh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="106.75" id="3PT-Kk-SRT"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="e4E-fn-c88" secondAttribute="bottom" constant="25" id="7cl-dk-XLF"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="w7O-Km-a4i" secondAttribute="trailing" id="D8a-NG-SsM"/>
                 <constraint firstItem="e4E-fn-c88" firstAttribute="top" secondItem="w7O-Km-a4i" secondAttribute="bottom" constant="35" id="Kvf-KU-D4C"/>
@@ -78,6 +78,7 @@
                 <constraint firstItem="w7O-Km-a4i" firstAttribute="top" secondItem="VmS-p8-dkh" secondAttribute="bottom" constant="23" id="bVo-7I-TPc"/>
                 <constraint firstItem="w7O-Km-a4i" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fAA-0s-u1S"/>
                 <constraint firstItem="w7O-Km-a4i" firstAttribute="centerX" secondItem="e4E-fn-c88" secondAttribute="centerX" id="gnp-8o-qhx"/>
+                <constraint firstItem="VmS-p8-dkh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="110" id="xkw-z3-fAY"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="55.200000000000003" y="48.125937031484263"/>
